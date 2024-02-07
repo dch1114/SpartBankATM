@@ -36,3 +36,27 @@ Unity을 활용하여 기본적인 UI화면을 구성하고 입금과 출금을 
 ## 개발 환경
 Unity Editor Version 2022.3.2f1   
 IDE: Visual Studio 2022
+
+## 플레이 화면
+
+#### 시작 화면
+<img src = "https://github.com/dch1114/SpartBankATM/assets/129824716/77cd2a4a-c6b8-415a-9556-4c3ea7ff343d" width="400" height="300"/>
+
+---
+#### 입금 화면
+<img src = "https://github.com/dch1114/SpartBankATM/assets/129824716/f9b9200a-bc30-4c4d-a798-c7b12d20f00b" width="400" height="300"/>
+
+---
+#### 출금 화면
+<img src = "https://github.com/dch1114/SpartBankATM/assets/129824716/48ef4642-3896-4df8-ba79-298619124c9b" width="400" height="300"/>
+
+---
+#### 잔액 부족 화면
+<img src = "https://github.com/dch1114/SpartBankATM/assets/129824716/f224f661-86e7-4747-ad63-fc460ed2961f" width="400" height="300"/>
+
+---
+#### 사용자 입력 화면
+<img src = "https://github.com/dch1114/SpartBankATM/assets/129824716/d0b14f2f-4d0b-416c-b00e-fa12cc2649ef" width="400" height="300"/>
+
+
+
