@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PopupBank : MonoBehaviour
+public class PopupBank : UIBase
 {
     [SerializeField] private Text userName;
     [SerializeField] private Text balance;
     [SerializeField] private Text cash;
-    [SerializeField] private GameObject popupError;
 
     private void Start()
     {
+        GameManager.instance.LoadUserData("¼®µ¿±¸");
         Refresh();
     }
 
@@ -19,9 +19,11 @@ public class PopupBank : MonoBehaviour
     {
         if (!GameManager.instance.User.Deposit(money))
         {
-            popupError.SetActive(true);
+            UIManager.Instance.Show("PopupError");
             return;
         }
+
+        GameManager.instance.SaveUserData();
 
         Refresh();
     }
@@ -30,9 +32,11 @@ public class PopupBank : MonoBehaviour
     {
         if (!GameManager.instance.User.Withdraw(money))
         {
-            popupError.SetActive(true);
+            UIManager.Instance.Show("PopupError");
             return;
         }
+
+        GameManager.instance.SaveUserData();
 
         Refresh();
     }
